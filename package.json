@@ -1,0 +1,23 @@
+{
+  "name" : "Tor61",
+  "version": "0.0.1",
+  "description": "Tor61 Implementation",
+  "scripts": {
+    "make" : "./node_modules/.bin/gulp",
+    "test" : "./node_modules/.bin/gulp && ./node_modules/.bin/gulp test",
+    "reg" :  "npm run-script make && cd ./bin/mockregistration && node main.js && cd ../..",
+    "start" : "npm run-script make && cd ./bin && node main.js 7186 1 46110 && cd ../"
+  },
+  "dependencies": {
+    "gulp" : "latest",
+    "through2" : "latest",
+    "node-uuid" : "latest",
+    "gulp-typescript" : "latest",
+    "gulp-nodeunit" : "latest",
+    "http-string-parser" : "latest",
+    "sprintf-js" : "latest",
+    "chunking-streams" : "latest"
+  },
+  "author": "Aaron Nech, Daniel Gorrie",
+  "license": "N/A"
+}

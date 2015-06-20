@@ -1,0 +1,10 @@
+#!/bin/sh
+
+cd ./bin;
+
+until node ./main.js $1 $2 $3; do
+    echo "Respawning.." >&2
+    sleep 1
+done
+
+cd ../
